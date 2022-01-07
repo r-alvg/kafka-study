@@ -25,7 +25,7 @@ func Start() {
 func connect() *mongo.Database {
 	once.Do(func() {
 		ctx := context.Background()
-		clientOpt := options.Client().ApplyURI("mongodb+srv://0uno:qy0nSuKoGijRUNSQ@twitter-ej3ca.mongodb.net/test?retryWrites=true&w=majority")
+		clientOpt := options.Client().ApplyURI("mongodb+srv://"xx:xxxxx")
 		client, err := mongo.NewClient(clientOpt)
 
 		if err != nil {
